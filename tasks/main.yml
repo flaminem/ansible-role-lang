@@ -1,0 +1,6 @@
+---
+- name: Set /etc/default/locale to {{ lang }}
+  copy: dest=/etc/default/locale content="LANG={{ lang }}{{'\n'}}LANGUAGE={{ language }}{{'\n'}}"
+  notify: update lang
+  when: ansible_os_family == "Debian"
+  tags: [configuration,lang]

@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Julien DAUPHANT
+  description: Set system language
+  license: MIT
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  categories:
+  - system
+dependencies: []
